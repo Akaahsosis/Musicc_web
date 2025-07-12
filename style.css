@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: rgba(20, 20, 20, 0.8); 
+    background-image: url('uploads/back.jpg'); /* Ganti dengan path gambar Anda */
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(20, 20, 20, 0.8); /* Latar belakang transparan untuk konten */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1db954; /* Warna hijau Spotify */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1aa34a;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.track-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.track-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.track-info p {
+    margin: 3px 0;
+    color: #b3b3b3; /* Warna teks sekundar */
+}
+
+.track-audio {
+    margin-left: 10px;
+}
+
+.track-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.track-actions .btn {
+    background: none; /* Tanpa background */
+    border: none; /* Tanpa border */
+    cursor: pointer; /* Kursor pointer pada hover */
+    color: #047b0c; /* Warna ikon */
+    font-size: 20px; /* Ukuran font untuk ikon */
+}
+
+.track-actions .btn:hover {
+    color: #007bff; /* Warna saat hover */
+}
+
+.track-actions form {
+    margin: 0;
+}
+
+.play-button {
+    background-color: #1db954; /* Warna hijau Spotify */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center; /* Pusatkan teks dan ikon */
+}
+
+.play-button i {
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+}
+
+.play-button:hover {
+    background-color: #1aa34a;
+    transform: scale(1.05); /* Efek memperbesar saat hover */
+}
+
+/* Tambahkan efek transisi pada tombol lain */
+.btn {
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #444; /* Contoh efek hover untuk tombol lain */
+}
+
+.track-title {
+    color: #1db954; /* Warna hijau Spotify */
+    cursor: pointer; /* Menunjukkan bahwa judul dapat diklik */
+    transition: color 0.3s;
+}
+
+.track-title:hover {
+    color: #1aa34a; /* Warna saat hover */
+}
+
+.track-actions {
+    margin-left: 15px; /* Jarak antara informasi track dan tombol aksi */
+}
+
+.container {
+    max-width: 600px; /* Lebar maksimal kontainer */
+    margin: auto;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.8); /* Latar belakang transparan */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+ .album-cover {
+     width: 120px; /* Lebar gambar album */
+     height: 120px; /* Tinggi gambar album */
+     border-radius: 5px; /* Sudut melengkung */
+     object-fit: cover; /* Memastikan gambar mengisi ruang tanpa merusak aspek rasio */
+     margin-right: 15px; /* Jarak antara gambar dan informasi track */
+ }
+    
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Membuat label berada di atas input */
+    margin-bottom: 5px;
+    color: #ffffff; /* Warna label */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+    width: 100%; /* Mengisi lebar kontainer */
+    padding: 10px; /* Memberikan jarak di dalam input */
+    border: 1px solid #ccc; /* Garis batas */
+    border-radius: 5px; /* Sudut melengkung */
+    background-color: #333; /* Warna latar belakang input */
+    color: #ffffff; /* Warna teks */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="file"]:focus {
+    border-color: #1db954; /* Warna batas saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+.btn {
+    background-color: #1db954; /* Warna hijau Spotify */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Menghimpun tombol menjadi blok penuh */
+    width: 100%; /* Lebar tombol penuh */
+    text-align: center; /* Memusatkan teks */
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1aa34a; /* Warna saat hover */
+}
+
+.btn-cancel {
+    background-color: #dc3545; /* Warna merah untuk tombol batal */
+}
+
+.btn-cancel:hover {
+    background-color: #c82333; /* Warna saat hover untuk batal */
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+.tab-buttons a {
+    background-color:rgb(0, 86, 0); /* Warna latar belakang tombol */
+    color: white; /* Warna teks */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    text-decoration: none; /* Menghapus garis bawah */
+    border-radius: 5px; /* Sudut melengkung */
+    margin: 0 10px; /* Jarak antar tombol */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.tab-buttons a:hover {
+    background-color:rgb(0, 86, 0);/* Warna saat hover */
+}
+
+.btn-add {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+}
+
+.artists-list {
+    margin-top: 20px;
+}
+
+.artists-list div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.artists-list a {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Gaya untuk Edit */
+.artists-list a.edit {
+    background-color: #007bff; /* Biru */
+}
+
+.artists-list a.edit:hover {
+    background-color: #0056b3; /* Biru gelap */
+}
+
+/* Gaya untuk Delete */
+.artists-list a.delete {
+    background-color: #dc3545; /* Merah */
+}
+
+.artists-list a.delete:hover {
+    background-color: #c82333; /* Merah gelap */
+}
+
+/* Gaya untuk tombol tambah */
+
+.btn-add:hover {
+    background-color: #218838;
+}
